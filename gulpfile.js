@@ -60,7 +60,9 @@ gulp.task('styles', function() {
 
 gulp.task('serve', function(){
 	browserSync.init({
-		server: './dist'
+		server: {
+			baseDir: './dist'
+		}
 	});
 
 	gulp.watch('index.html', ['copy-html']);
