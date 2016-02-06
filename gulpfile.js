@@ -62,7 +62,9 @@ gulp.task('serve', function(){
 	browserSync.init({
 		server: {
 			baseDir: './dist'
-		}
+		},
+		// Google Chrome Canary
+		browser: 'Chrome'
 	});
 
 	gulp.watch('index.html', ['copy-html']);
