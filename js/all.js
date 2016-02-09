@@ -11,6 +11,7 @@
 	DashCtrl.$inject = ['$http'];
 
 	function DashCtrl($http) {
+		/*
 		$http({
 			method: 'GET',
 			url: 'http://svc.metrotransit.org/NexTrip/VehicleLocations/902'
@@ -24,7 +25,7 @@
 			// or server returns response with an error status.
 			console.log(response);
 		});
-
+	*/
 		//http://svc.metrotransit.org/NexTrip/VehicleLocations/{902}
 		//'http://svc.metrotransit.org/NexTrip/Routes'
 	}

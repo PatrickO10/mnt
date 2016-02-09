@@ -72,4 +72,9 @@ gulp.task('serve', function(){
 	gulp.watch(jsOrder, ['lint', 'scripts']);
 });
 
-gulp.task('default', ['copy-html', 'styles', 'lint', 'scripts', 'serve']);
+gulp.task('copy-images', function() {
+	gulp.src('./imgs/*.svg')
+		.pipe(gulp.dest('./dist/imgs'));
+});
+
+gulp.task('default', ['copy-html', 'styles', 'lint', 'scripts', 'copy-images', 'serve']);
